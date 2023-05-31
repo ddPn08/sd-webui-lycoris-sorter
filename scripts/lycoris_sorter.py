@@ -47,7 +47,7 @@ def main(input, output):
     except Exception as e:
         print(e)
         yield gr.Button.update(interactive=False)
-    yield gr.Button.update(interactive=False)
+    yield gr.Button.update(interactive=True)
 
 
 def on_ui_tabs():
@@ -55,7 +55,7 @@ def on_ui_tabs():
         with gr.Row():
             input = gr.Textbox(label="Input directory")
             output = gr.Textbox(label="Output directory")
-        run = gr.Button(label="Run")
+        run = gr.Button(label="Run", variant="primary")
 
         run.click(
             fn=main,
