@@ -40,9 +40,10 @@ def main(input, output):
                     if "hada" in key:
                         t = "lycoris"
 
-                input = os.path.join(output, t)
-                os.makedirs(input, exist_ok=True)
-                os.rename(file, os.path.join(input, os.path.basename(file)))
+                outdir = os.path.join(output, t)
+                outfile = os.path.join(outdir, os.path.relpath(file, input))
+                os.makedirs(os.path.dirname(outfile), exist_ok=True)
+                os.rename(file, outfile)
     except Exception as e:
         print(e)
         yield gr.Button.update(interactive=False)
