@@ -1,14 +1,5 @@
 # sd-webui-lycoris-sorter
 
-本レポジトリは、[ddPn08](https://github.com/ddPn08)氏の[sd-webui-lycoris-sorter](https://github.com/ddPn08/sd-webui-lycoris-sorter)に、  
-適当・簡単にReadmeを付けただけです。
-
-## 免責
-
-- 作者と本書の筆者は別のため表現の正しさに保証はありません。
-- どのような問題が起きてもこれに同氏も私も責任を持ちません。
-- 使用開始はこれを了承したものとみなします。
-
 ## どんな人向け？
 
 - LoRaとLycorisを一緒くたに保存してしまって、Cutoffプラグイン等でエラーが起きた人
